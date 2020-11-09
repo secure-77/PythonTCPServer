@@ -32,7 +32,7 @@ arg: comma seperated list of arguments
 
 ## Security
 
-The login token is atm the current date in format "dd.mm.yyyy" (not very save, in production you should replace that part of code).
+The login token is the current date in format "dd.mm.yyyy" (not very save, in production you should replace that part of code).
 
 Make sure to restrict the edit permissions of the configuration file, otherwise the server functionality could be extend to run any command from remote.
 
