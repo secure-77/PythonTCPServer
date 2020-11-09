@@ -49,3 +49,8 @@ to start the server just run the tcpServer.py, on windows if you want to run it 
 
 <img src="https://github.com/secure-77/PythonTCPServer/blob/master/Example.png?raw=true" width="500">
 
+### Sources
+
+https://pymotw.com/3/socket/tcp.html
+https://hackersandslackers.com/simplify-your-python-projects-configuration/
+
