@@ -1,0 +1,24 @@
+bind: "192.168.178.57"
+port: 7777
+buffer_size: 16
+timeout: 60
+welcome_Message: "#### Connected to Communication Gateway, please Login ####\n"
+commands:
+  start_vpn:
+    call: "powershell.exe"
+    arg: "start-vm Gateway Server"
+  shutdown_vpn:
+    call: "powershell.exe"
+    arg: "stop-vm Gateway Server"
+  getVMstatus:
+    call: "powershell.exe"
+    arg: "get-vm"
+  stayAwake:
+    call: "powercfg"
+    arg: "/SETACTIVE, 381b4222-f694-41f0-9685-ff5bb260df2e"
+  setToSleep:
+    call: "powercfg"
+    arg: "/SETACTIVE,a1841308-3541-4fab-bc81-f71556f20b4a"
+  getPowerState:
+    call: "powercfg"
+    arg: "/getactivescheme"
