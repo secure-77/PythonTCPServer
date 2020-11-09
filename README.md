@@ -24,13 +24,17 @@ Simple Python 3 TCP Server
 
 Just adjust the config.yaml, make sure the port is open in your firewall
 
-The login token is atm the current date in format "dd.mm.yyyy" (not very save, in production you should replace that part of code)
-
 In the commands section of the file you can simply add commands that the server will provide and run
 ```sh
 call: the programm or script wich will be called
 arg: comma seperated list of arguments
 ```
+
+## Security
+
+The login token is atm the current date in format "dd.mm.yyyy" (not very save, in production you should replace that part of code).
+
+Make sure to restrict the edit permissions of the configuration file, otherwise the server functionallity could be extend to run any command from remote.
 
 ## Usage
 
