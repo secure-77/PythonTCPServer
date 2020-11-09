@@ -6,8 +6,8 @@ Simple Python 3 TCP Server
 * easy to extend
 * YAML configuration
 * Implement commands or scripts via configuration
-* simple authentification
-* little bruteforce protection
+* simple authentication
+* simple brute force protection
 * server logging
 * client timeout
 * dynamic help (list commands from config)
@@ -26,7 +26,7 @@ Just adjust the config.yaml, make sure the port is open in your firewall
 
 In the commands section of the file you can simply add commands that the server will provide and run
 ```sh
-call: the programm or script wich will be called
+call: the program or script which will be called
 arg: comma seperated list of arguments
 ```
 
@@ -34,7 +34,9 @@ arg: comma seperated list of arguments
 
 The login token is atm the current date in format "dd.mm.yyyy" (not very save, in production you should replace that part of code).
 
-Make sure to restrict the edit permissions of the configuration file, otherwise the server functionallity could be extend to run any command from remote.
+Make sure to restrict the edit permissions of the configuration file, otherwise the server functionality could be extend to run any command from remote.
+
+The brute force protection will only set a sleep time, in production maybe this should extend with client disconnection and ip blocking. 
 
 ## Usage
 
